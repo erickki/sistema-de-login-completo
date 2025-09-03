@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fundo1:#171717;
+    --borda1:#333333;
+    --texto1:#7217d4;
+    --texto2:#ededed;
+    --texto3:#757575;
+    --erro:#d41717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--fundo1);
+}
+
+.caixa-sistema-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 22vw;
+    border: inset 4px var(--borda1);
+    border-radius: 15px;
+    border-style: solid;
+    padding: 40px 0 40px 0;
+}
+
+.caixa-sistema-login from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-sistema-login-caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-sistema-login-caixas input {
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    background-color: var(--fundo1);
+    border: inset 2px var(--borda1);
+    border-radius: 10px;
+    border-style: solid;
+    color: var(--texto3);
+    font-size: 15px;
+}
+
+.caixa-sistema-login-caixas input:focus {
+    outline: none;
+    border-color: var(--texto1);
+    color: var(--texto2);
+    font-style: italic;
+}
+
+.caixa-sistema-login-caixas input::selection {
+    background-color: var(--texto1);
+}
+
+.caixa-sistema-login-caixas input::placeholder {
+    color: var(--texto3);
+    font-weight: bold;
+}
+
+.caixa-sistema-login-caixas button {
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    background-color: var(--texto1);
+    border: none;
+    border-radius: 10px;
+    color: var(--texto2);
+    font-size: 15px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.caixa-sistema-login-caixas button:hover {
+    font-size: 20px;
+}
+
+.caixa-sistema-login-caixas button:active {
+    font-size: 15px;
+}
+
+.caixa-sistema-login-caixas a {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto1);
+}
+
+.caixa-sistema-login-caixas h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--erro);
+    padding-top: 10px;
+}
+
+.caixa-sistema-login-textos1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-sistema-login-textos1 h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto1);
+}
+
+.caixa-sistema-login-textos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.caixa-sistema-login-textos1 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto2);
+}
+
+.caixa-sistema-login-textos1 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto3);
+}
+
+.caixa-sistema-login-textos3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.caixa-sistema-login-textos3 h5 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto2);
+}
+
+.caixa-sistema-login-textos3 a {
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--texto1);
+    padding-left: 5px;
+}

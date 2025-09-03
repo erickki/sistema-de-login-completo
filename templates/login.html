@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Rôxho - Login</title>
+</head>
+<body>
+    <main class="caixa-sistema-login">
+        <div class="caixa-sistema-login-textos1">
+            <h1>Rôxho</h1>
+            <div class="caixa-sistema-login-textos2">
+                <h2>Bem-Vindo(a) de volta!</h2>
+                <h3>Faça seu login.</h3>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <div class="caixa-sistema-login-caixas">
+                <input type="text" placeholder="Email" name="entrada_email">
+                <input type="password" placeholder="Senha" name="entrada_senha">
+                <button type="submit">Login</button>
+                <a href="/esqueci-a-senha">Esqueceu a senha?</a>
+                <h4>ERRO(ARRUMAR)</h4>
+            </div>
+        </form>
+        <div class="caixa-sistema-login-textos3">
+            <h5>Não tem uma conta?<a href="/registro">Registre-se!</a></h5>
+        </div>
+    </main>
+</body>
+</html>
