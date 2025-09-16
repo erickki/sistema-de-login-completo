@@ -15,15 +15,17 @@
                 <h3>Faça seu login.</h3>
             </div>
         </div>
-        <form action="#" method="post">
             <div class="caixa-sistema-login-caixas">
-                <input type="text" placeholder="Email" name="entrada_email">
-                <input type="password" placeholder="Senha" name="entrada_senha">
-                <button type="submit">Login</button>
-                <a href="/esqueci-a-senha">Esqueceu a senha?</a>
-                <h4>ERRO(ARRUMAR)</h4>
+                <form action="/erro_no_login" method="POST">
+                    <input type="text" placeholder="Email" name="entrada_email">
+                    <input type="password" placeholder="Senha" name="entrada_senha">
+                    <button type="submit">Login</button>
+                    <a href="/esqueci-a-senha">Esqueceu a senha?</a>
+                    {% if erro %}
+                    <h4>{{ erro }}</h4>
+                    {% endif %}
+                </form>
             </div>
-        </form>
         <div class="caixa-sistema-login-textos3">
             <h5>Não tem uma conta?<a href="/registro">Registre-se!</a></h5>
         </div>

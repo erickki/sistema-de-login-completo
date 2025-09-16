@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Rôxho - Registro</title>
+</head>
+<body>
+    <main class="caixa-sistema-login">
+        <div class="caixa-sistema-login-textos1">
+            <h1>Rôxho</h1>
+            <div class="caixa-sistema-login-textos2">
+                <h2>Seja muito Bem-Vindo(a)!</h2>
+                <h3>Faça seu registro.</h3>
+            </div>
+        </div>
+            <div class="caixa-sistema-login-caixas">
+                <form action="/erro_no_registro" method="POST">
+                    <input type="text" placeholder="Matrícula" name="entrada_matricula">
+                    <input type="text" placeholder="Email" name="entrada_email">
+                    <input type="password" placeholder="Senha" name="entrada_senha">
+                    <input type="password" placeholder="Confirme a Senha" name="entrada_senha2">
+                    <button type="submit">Registrar</button>
+                    {% if erro %}
+                    <h4>{{ erro }}</h4>
+                    {% endif %}
+                </form>
+            </div>
+        <div class="caixa-sistema-login-textos3">
+            <h5>Já tem uma conta?<a href="/login">Logar-se!</a></h5>
+        </div>
+    </main>
+</body>
+</html>

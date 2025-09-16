@@ -50,7 +50,7 @@ body {
     gap: 10px;
 }
 
-.caixa-sistema-login-caixas {
+.caixa-sistema-login-caixas, .caixa-sistema-login-caixas form {
     display: flex;
     justify-content: center;
     align-items: center;
